@@ -7,10 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function getRvnes(){
     fetch(baseURL)
     .then(response => response.json())
-    .then(addRvnesToDom)
-}
-
-function addRvnesToDom(rvne){
-    // Find the best way to add to DOM - certainly won't all be within a function?
+    .then(rvne => {
+        rvne.data.forEach(rvne => {
+            const rvneMarkup = `
+            <div data-id=${rvne.id}>
+            <h3>${rvne.attributes.content}</h3>
+            <p>${rvne.attributes.user.username}</p>
+            <button data-id=${rvne.id}>edit</button>
+            </div>
+            <br><br>`;
+            document.querySelector('#rvne-container').innerHTML += rvneMarkup;
+        })
+    })
 }
 
