@@ -29,9 +29,19 @@ function getRvnes(){
 function newRvneHandler(e){
     e.preventDefault()
     const rvneInput = document.querySelector("#input-string").value
-    rvneFetch(rvneInput)
+    postFetch(rvneInput)
 } 
 
-function rvneFetch(content) {
-    console.log(content);
+function postFetch(content) {
+    fetch(baseURL, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            content: content
+        })
+    })
+    .then(response => response.json())
+    .then(rvne => {
+        console.log(rvne);
+    })
 }
