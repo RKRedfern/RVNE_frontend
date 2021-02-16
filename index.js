@@ -2,6 +2,11 @@ const baseURL = "http://localhost:3000/api/v1/rvnes"
 
 document.addEventListener('DOMContentLoaded', () => {
     getRvnes()
+
+    const newRvne = document.querySelector("#create-rvne-form")
+
+    newRvne.addEventListener("submit", (e) => 
+        newRvneHandler(e))
 })
 
 function getRvnes(){
@@ -21,3 +26,12 @@ function getRvnes(){
     })
 }
 
+function newRvneHandler(e){
+    e.preventDefault()
+    const rvneInput = document.querySelector("#input-string").value
+    rvneFetch(rvneInput)
+} 
+
+function rvneFetch(content) {
+    console.log(content);
+}
