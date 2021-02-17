@@ -5,23 +5,21 @@
         <meta charset="utf-8">
         <script type="text/javascript" src="index.js"></script>
         <title></title>
-        
     </head>
-    <div class="form-container">
-    <form id="create-rvne-form" style="">
-        <h3> Create a new Code </h3>
-        <input id="input-string" type="text" name="rvne" value="" class="input-text">
-        <input id="create-button" type="submit" name="submit" value="Save Rvne" class="submit">
-    </form>
-
-    </div>
     <body>
-        <div id="rvne-container">
-    </div>
-
-    
-
-
+        <div id="username-container">
+            <input id="username" placeholder="Enter your username"></input>
+            <button id="submit-username">Submit</button>
+        </div>
+        <div id="main-container" class="form-container" style="display:none;">
+        <form id="create-rvne-form">
+            <h3> Create a new Code </h3>
+            <input id="input-string" type="text" name="rvne" value="" class="input-text">
+            <input id="create-button" type="submit" name="submit" value="Save Rvne" class="submit">
+        </form>
+                <div id="rvne-container">
+                </div>
+        </div>
     </form>
 
     </body>
