@@ -1,26 +1,40 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
     <head>
-        <meta charset="utf-8">
-        <script type="text/javascript" src="index.js"></script>
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="src/index.js" defer></script>
+        <title>RVNE</title>
     </head>
-    <body>
-        <div id="username-container">
-            <input id="username" placeholder="Enter your username"></input>
-            <button id="submit-username">Submit</button>
-        </div>
-        <div id="main-container" class="form-container" style="display:none;">
-        <form id="create-rvne-form">
-            <h3> Create a new Code </h3>
-            <input id="input-string" type="text" name="rvne" value="" class="input-text">
-            <input id="create-button" type="submit" name="submit" value="Save Rvne" class="submit">
-        </form>
-                <div id="rvne-container">
-                </div>
-        </div>
-    </form>
 
+    <body>
+        <div id="container" class="container">
+
+            <div id="rvne-landing" class="rvne-landing">
+                <h4> This is the get started body </h4>
+                <input id="username" placeholder="Enter Your Name"></input>
+                <button class="button" id="login-button"> Go </button>
+
+            </div>
+
+            <div id="rvne-create" class="rvne-create" hidden>
+                <h4> This is the submit RVNE body </h4>
+                <input id="rvne" placeholder="Enter Your String"></input>
+                <button class="button" id="submit-button"> Translate </button>
+                <button class="button" id="back-button"> Go Back </button>
+            </div>
+
+            <div id="rvne-vessel" class="rvne-vessel" hidden>
+                <ul id="rvne-list">
+
+                </ul>
+            </div>
+
+        </div>
+        
     </body>
+
 </html>
