@@ -3,8 +3,8 @@
 This program was created using a Rails back-end and the PostGres Database Gem. The link to the backend file can be accessed here :
 https://github.com/RKRedfern/RVNE_backend
 
-This program can be started by cloning both repositories, using bundle install, running <rails s> in the back-end console
-and running open <index.html> in the front end console. 
+This program can be started by cloning both repositories, using bundle install, running < rails s > in the back-end console
+and running < open index.html > in the front end console. 
 
 
 RVNE was intended to be an interactive keyboard application providing users with the ability to create translations with a library of symbols and a way 
