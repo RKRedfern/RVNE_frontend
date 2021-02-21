@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    background-image: url("https://i.pinimg.com/736x/38/f8/13/38f813d310992150d4a141f67b7223ae.jpg");
+}
+
+
+.container {
+
+}
+
+.rvne-landing {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 25px;
+    margin: 50px;
+}
+
+.user-login {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 25px;
+    margin: 50px;
+}
+
+.rvne-create {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 25px;
+    margin: 50px;
+}
+
+.rvne-vessel {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    padding: 25px;
+    margin: 50px;
+}
+
+/* text&font */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+
+body {
+    font-family: 'Cinzel', serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+h4 {    
+    font-family: 'Cinzel', serif;
+}
+
+
+/* buttons */
+.button {
+    background: -webkit-linear-gradient(right, #000000, #ffffff, #ffffff);
+    border: none;
+    border-radius: 0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    width: 200px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.outline-ombre-btn:hover {
+    box-shadow: none;
+    color: white;
+}
